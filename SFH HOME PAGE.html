@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>FitBot</title>
+
+    <style>
+        body {
+            background-color: #111;
+        }
+
+        /* Add a custom class to style the container */
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5rem;
+			
+        }
+
+        /* Crop the image by 20% at the bottom */
+        .cropped-image {
+            object-fit: cover;
+            object-position: 60% 20%;
+            height: 300px; /* Set a fixed height for consistency */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <h1 class="text-center text-white" style="font-size:60px">FitBot</h1>
+	<h4 class="text-center text-white"> Your fitness guide </h2>
+	
+	<br>
+	<br>
+    <i><h2 class="text-center text-white" >Choose your type</h2></i>
+
+    <div class="card-container">
+        <!-- Card 1 - UNDERWEIGHT -->
+        <div class="col-lg-4" >
+            <A HREF="Underweight.html"><div class="card">
+                <img src="https://www.shutterstock.com/image-vector/weak-nerd-man-shirt-less-260nw-1216439485.jpg" class="card-img-top cropped-image" alt="Thin">
+                <div class="card-body">
+                    <p class="card-text text-center text-black" stylle="color:black;">1 - UNDERWEIGHT</p>
+                </div>
+            </div></A>
+        </div>
+
+        <!-- Card 2 - Overweight -->
+        <div class="col-lg-4">
+             <A HREF="Overweight.html"><div class="card">
+                <img src="https://t4.ftcdn.net/jpg/00/76/02/97/360_F_76029756_XNWLwEmI8G9aXAnz6jAozmPuUK1GH9Ve.jpg" class="card-img-top cropped-image " alt="Overweight">
+                <div class="card-body">
+                    <p class="card-text text-center text-black">2 - OVERWEIGHT</p>
+                </div>
+            </div></a>
+        </div>
+
+        <!-- Card 3 - Obese -->
+        <div class="col-lg-4">
+             <A HREF="Obese.html"><div class="card">
+                <img src="https://t3.ftcdn.net/jpg/00/43/19/12/360_F_43191268_KO95vpMADFGiHAECBiMlB916TNW7OPhZ.jpg" class="cropped-image card-img-top" alt="Obese">
+                <div class="card-body" >
+                    <p class="card-text text-center text-black">3 - OBESE</p>
+                </div>
+            </div></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
